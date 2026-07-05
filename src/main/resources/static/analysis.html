@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BuyWise - AI Analysis</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="/analysis.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>BuyWise</span>
+    </div>
+
+    <a href="/index.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+        Home
+    </a>
+
+</nav>
+
+<div class="container">
+
+    <div class="left-panel">
+
+        <div class="product-card">
+
+            <div class="product-icon">
+
+                <i class="fa-solid fa-box-open"></i>
+
+            </div>
+
+            <h2 id="productName">
+                Analyzing...
+            </h2>
+
+            <p class="price" id="price">
+                Checking Product...
+            </p>
+
+            <button class="buy-btn">
+                Buy Now
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="right-panel">
+
+        <div class="score-card">
+
+            <div class="score-circle">
+                ...
+            </div>
+
+            <div>
+
+                <h2>Buy Score</h2>
+
+                <p id="scoreText">
+                    AI is calculating score...
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="summary-card">
+
+            <h2>
+
+                <i class="fa-solid fa-robot"></i>
+
+                AI Summary
+
+            </h2>
+
+            <p id="summary">
+
+                Analyzing customer reviews...
+
+            </p>
+
+        </div>
+
+        <div class="pros-cons">
+
+            <div class="pros">
+
+                <h2>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Pros
+
+                </h2>
+
+                <ul id="prosList">
+
+                    <li>Loading...</li>
+
+                </ul>
+
+            </div>
+
+            <div class="cons">
+
+                <h2>
+
+                    <i class="fa-solid fa-circle-xmark"></i>
+
+                    Cons
+
+                </h2>
+
+                <ul id="consList">
+
+                    <li>Loading...</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="recommendation-card">
+
+            <h2>
+
+                <i class="fa-solid fa-star"></i>
+
+                Verdict
+
+            </h2>
+
+            <p id="verdict">
+
+                Analyzing...
+
+            </p>
+
+        </div>
+        <!-- AI Confidence -->
+        <div class="summary-card">
+
+            <h2>
+                <i class="fa-solid fa-brain"></i>
+                AI Confidence
+            </h2>
+
+            <div class="progress">
+                <div class="progress-fill" id="confidenceBar"></div>
+            </div>
+
+            <p id="confidenceText">Loading...</p>
+
+        </div>
+
+        <!-- Fake Review Risk -->
+        <div class="recommendation-card">
+
+            <h2>
+                <i class="fa-solid fa-shield-halved"></i>
+                Fake Review Risk
+            </h2>
+
+            <p id="fakeRisk">
+                Checking...
+            </p>
+
+        </div>
+
+        <!-- Best For & Avoid If -->
+        <div class="pros-cons">
+
+            <div class="pros">
+
+                <h2>
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    Best For
+                </h2>
+
+                <ul id="bestFor">
+
+                    <li>Loading...</li>
+
+                </ul>
+
+            </div>
+
+            <div class="cons">
+
+                <h2>
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Avoid If
+                </h2>
+
+                <ul id="avoidIf">
+
+                    <li>Loading...</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Smart Buying Tips -->
+        <div class="summary-card">
+
+            <h2>
+                <i class="fa-solid fa-lightbulb"></i>
+                Smart Buying Tips
+            </h2>
+
+            <ul id="tipsList">
+
+                <li>Loading...</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Review Sentiment -->
+        <div class="summary-card">
+
+            <h2>
+                <i class="fa-solid fa-chart-pie"></i>
+                Review Sentiment
+            </h2>
+
+            <p>😊 Positive : <span id="positive">0</span>%</p>
+
+            <p>😐 Neutral : <span id="neutral">0</span>%</p>
+
+            <p>😞 Negative : <span id="negative">0</span>%</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="/analysis.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1070 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#08111f;
+
+    color:#ffffff;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:80px;
+
+    padding:0 8%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    background:rgba(8,17,31,.85);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.logo i{
+
+    color:#38bdf8;
+
+    font-size:28px;
+
+}
+
+.back-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.back-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(37,99,235,.35);
+
+}
+
+/* ==========================================
+   MAIN CONTAINER
+========================================== */
+
+.container{
+
+    max-width:1400px;
+
+    margin:120px auto 60px;
+
+    padding:0 5%;
+
+    display:grid;
+
+    grid-template-columns:350px 1fr;
+
+    gap:35px;
+
+}
+
+/* ==========================================
+   COMMON CARD
+========================================== */
+
+.product-card,
+.score-card,
+.summary-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================
+   PRODUCT CARD
+========================================== */
+
+.product-card{
+
+    padding:30px;
+
+    text-align:center;
+
+    position:sticky;
+
+    top:110px;
+
+}
+
+.product-card img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    margin-bottom:25px;
+
+    object-fit:cover;
+
+}
+
+.product-card h2{
+
+    font-size:26px;
+
+    margin-bottom:15px;
+
+}
+
+.price{
+
+    color:#38bdf8;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    margin-bottom:30px;
+
+}
+
+.buy-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.buy-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 35px rgba(37,99,235,.35);
+
+}
+
+/* ==========================================
+   RIGHT PANEL
+========================================== */
+
+.right-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+/* ==========================================
+   SCORE CARD
+========================================== */
+
+.score-card{
+
+    padding:35px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+.score-circle{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    font-weight:700;
+
+    color:#fff;
+
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+
+    box-shadow:0 0 30px rgba(56,189,248,.45);
+
+}
+
+.score-card h2{
+
+    margin-bottom:12px;
+
+    font-size:30px;
+
+}
+
+.score-card p{
+
+    color:#b7c5d8;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   SUMMARY CARD
+========================================== */
+
+.summary-card{
+
+    padding:35px;
+
+}
+
+.summary-card h2{
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+}
+
+.summary-card i{
+
+    color:#38bdf8;
+
+    margin-right:10px;
+
+}
+
+.summary-card p{
+
+    color:#b7c5d8;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+}
+/* ==========================================
+   PROS & CONS
+========================================== */
+
+.pros-cons{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+}
+
+.pros,
+.cons{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(18px);
+
+    padding:30px;
+
+    transition:.35s;
+
+}
+
+.pros:hover,
+.cons:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.25);
+
+}
+
+.pros h2{
+
+    color:#22c55e;
+
+    margin-bottom:20px;
+
+    font-size:26px;
+
+}
+
+.cons h2{
+
+    color:#ef4444;
+
+    margin-bottom:20px;
+
+    font-size:26px;
+
+}
+
+.pros ul,
+.cons ul{
+
+    list-style:none;
+
+}
+
+.pros li,
+.cons li{
+
+    padding:12px 0;
+
+    color:#cbd5e1;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    font-size:16px;
+
+}
+
+.pros li:last-child,
+.cons li:last-child{
+
+    border-bottom:none;
+
+}
+
+.pros li::before{
+
+    content:"✔ ";
+
+    color:#22c55e;
+
+    font-weight:bold;
+
+}
+
+.cons li::before{
+
+    content:"✖ ";
+
+    color:#ef4444;
+
+    font-weight:bold;
+
+}
+
+/* ==========================================
+   REVIEW SUMMARY
+========================================== */
+
+.review-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(18px);
+
+    padding:35px;
+
+}
+
+.review-card h2{
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+.review-card h2 i{
+
+    color:#38bdf8;
+
+    margin-right:10px;
+
+}
+
+.review-card p{
+
+    color:#cbd5e1;
+
+    line-height:1.9;
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   PRICE ANALYSIS
+========================================== */
+
+.price-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(18px);
+
+    padding:35px;
+
+}
+
+.price-card h2{
+
+    margin-bottom:30px;
+
+    font-size:28px;
+
+}
+
+.price-card h2 i{
+
+    color:#38bdf8;
+
+    margin-right:10px;
+
+}
+
+.price-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.price-box{
+
+    background:rgba(255,255,255,.06);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.price-box:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(56,189,248,.10);
+
+}
+
+.price-box h3{
+
+    color:#cbd5e1;
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+}
+
+.price-box span{
+
+    color:#38bdf8;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+/* ==========================================
+   COMPARISON TABLE
+========================================== */
+
+.comparison-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(18px);
+
+    padding:35px;
+
+}
+
+.comparison-card h2{
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+}
+
+.comparison-card h2 i{
+
+    color:#38bdf8;
+
+    margin-right:10px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+}
+
+thead{
+
+    background:#2563eb;
+
+}
+
+thead th{
+
+    padding:18px;
+
+    text-align:left;
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+tbody tr{
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    background:rgba(56,189,248,.08);
+
+}
+
+tbody td{
+
+    padding:18px;
+
+    color:#dbe7f5;
+
+}
+
+/* ==========================================
+   AI RECOMMENDATION
+========================================== */
+
+.recommendation-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(18px);
+
+    padding:35px;
+
+}
+
+.recommendation-card h2{
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+}
+
+.recommendation-card h2 i{
+
+    color:#38bdf8;
+
+    margin-right:10px;
+
+}
+
+.recommendation{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.badge{
+
+    background:linear-gradient(135deg,#10b981,#22c55e);
+
+    color:white;
+
+    padding:15px 28px;
+
+    border-radius:40px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    box-shadow:0 10px 25px rgba(16,185,129,.35);
+
+}
+
+.recommendation p{
+
+    flex:1;
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   PRICE TREND
+========================================== */
+
+.chart-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    backdrop-filter:blur(18px);
+
+}
+
+.chart-card h2{
+
+    margin-bottom:25px;
+
+    font-size:28px;
+
+}
+
+.chart-card h2 i{
+
+    color:#38bdf8;
+
+    margin-right:10px;
+
+}
+
+.chart-placeholder{
+
+    height:260px;
+
+    border:2px dashed rgba(56,189,248,.4);
+
+    border-radius:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#38bdf8;
+
+    font-size:55px;
+
+}
+
+.chart-placeholder p{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+    color:#cbd5e1;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    margin-top:50px;
+
+    padding:30px;
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+    .container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .product-card{
+
+        position:relative;
+
+        top:0;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .pros-cons{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .price-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .score-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .recommendation{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    table{
+
+        display:block;
+
+        overflow-x:auto;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .navbar{
+
+        padding:0 20px;
+
+    }
+
+    .logo{
+
+        font-size:18px;
+
+    }
+
+    .back-btn{
+
+        padding:10px 18px;
+
+        font-size:14px;
+
+    }
+
+    .score-circle{
+
+        width:90px;
+
+        height:90px;
+
+        font-size:30px;
+
+    }
+
+    h2{
+
+        font-size:24px !important;
+
+    }
+
+    .price{
+
+        font-size:26px;
+
+    }
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#08111f;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#38bdf8;
+
+}
+/* ==========================================
+   NEW ANALYSIS CARDS
+========================================== */
+
+.progress{
+
+    width:100%;
+
+    height:12px;
+
+    background:#1e293b;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin:20px 0;
+
+}
+
+.progress-fill{
+
+    width:0;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#2563eb,#06b6d4);
+
+    transition:width 1s ease;
+
+}
+
+#confidenceText{
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+#fakeRisk{
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+#tipsList{
+
+    list-style:none;
+
+    padding-left:0;
+
+}
+
+#tipsList li{
+
+    padding:12px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    color:#cbd5e1;
+
+}
+
+#tipsList li::before{
+
+    content:"💡 ";
+
+}
+
+.back-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+}
+
+.back-btn i{
+
+    font-size:14px;
+}
+.product-icon{
+
+    width:160px;
+
+    height:160px;
+
+    margin:0 auto 30px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+
+    font-size:70px;
+
+    color:white;
+
+}

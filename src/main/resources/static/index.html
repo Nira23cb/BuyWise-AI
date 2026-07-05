@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyWise AI</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Background -->
+<div class="bg-animation"></div>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span>BuyWise AI</span>
+
+    </div>
+
+    <a href="#" class="nav-btn">
+
+        Get Started
+
+    </a>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="tag">
+
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            AI Powered Product Analysis
+
+        </p>
+
+        <h1>
+
+            Shop Smarter.<br>
+
+            Buy Better.
+
+        </h1>
+
+        <p class="subtitle">
+
+            Paste any Amazon, Flipkart or product link and let AI compare,
+            analyze reviews, price trends and recommend the best choice.
+
+        </p>
+
+        <!-- Search Box -->
+
+        <div class="search-box">
+
+            <input
+                    type="text"
+                    id="productLink"
+                    placeholder="Paste product link here..." />
+
+            <button id="analyzeBtn">
+
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+
+                Analyze
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <h2>Why Use AI Shopping Assistant?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-scale-balanced"></i>
+
+            <h3>Smart Comparison</h3>
+
+            <p>
+
+                Compare products instantly using AI and choose the
+                best one based on features.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h3>Price Insights</h3>
+
+            <p>
+
+                Track pricing, discounts and buying trends
+                before making a purchase.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-star"></i>
+
+            <h3>Review Summary</h3>
+
+            <p>
+
+                AI summarizes thousands of reviews into
+                easy-to-read pros and cons.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="steps">
+
+    <h2>How It Works</h2>
+
+    <div class="step-container">
+
+        <div class="step">
+
+            <div class="number">
+
+                1
+
+            </div>
+
+            <h3>Paste Link</h3>
+
+            <p>
+
+                Copy the product link from any shopping website.
+
+            </p>
+
+        </div>
+
+        <div class="arrow">
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </div>
+
+        <div class="step">
+
+            <div class="number">
+
+                2
+
+            </div>
+
+            <h3>AI Analysis</h3>
+
+            <p>
+
+                Our AI studies reviews, ratings and specifications.
+
+            </p>
+
+        </div>
+
+        <div class="arrow">
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </div>
+
+        <div class="step">
+
+            <div class="number">
+
+                3
+
+            </div>
+
+            <h3>Best Recommendation</h3>
+
+            <p>
+
+                Receive honest insights before spending your money.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>
+
+        Ready to Shop Smarter?
+
+    </h2>
+
+    <p>
+
+        Stop guessing. Let AI analyze your next purchase.
+
+    </p>
+
+    <button class="cta-btn" id="startBtn">
+
+        Start Analysis
+
+    </button>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h3>
+
+            AI Shopping Assistant
+
+        </h3>
+
+        <p>
+
+            Compare • Analyze • Save
+
+        </p>
+
+        <p class="copyright">
+
+            © 2026 AI Shopping Assistant
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================= LOADING SCREEN ================= -->
+
+<div class="loading-screen" id="loadingScreen">
+
+    <div class="loader"></div>
+
+    <h2>
+
+        AI is analyzing...
+
+    </h2>
+
+    <p>
+
+        Please wait a moment.
+
+    </p>
+
+</div>
+
+<!-- JS -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
